@@ -69,3 +69,22 @@ function first(arr,n){
 console.log(first([7, 9, 0, -2]));
 console.log(first([100,6,4,5]));
 console.log(first([12,13,14,15],-3));
+
+
+// Generic Function:
+// ES6
+// Arrow Functions
+function foo(a,b){
+ var c = a*b;
+ return a+b;
+}
+console.log(foo());
+// Syntax: var functionname=()=>expression
+// ES6 Syntax:
+var res=()=>"helloworld";
+console.log(res());
+// if your statement has a single line or expression
+// then return keyword is not needed
+//ex2: 
+var f1=(a,b)=>a+b;
+console.log(f1(12,13));
