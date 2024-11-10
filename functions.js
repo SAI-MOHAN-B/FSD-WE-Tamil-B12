@@ -88,3 +88,24 @@ console.log(res());
 //ex2: 
 var f1=(a,b)=>a+b;
 console.log(f1(12,13));
+
+2.Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.
+Input :                                     	Expected Output :
+console.log(last([7, 9, 0, -2]));         -2
+console.log(last([7, 9, 0, -2],3));    [9, 0, -2]
+console.log(last([7, 9, 0, -2],6));    [7, 9, 0, -2] 
+
+
+function last(arr,n){
+  if(n == undefined){
+   return arr.slice(-1)
+  }
+  else{
+  return arr.slice(-n)
+  }
+}
+console.log(last([7, 9, 0, -2]));
+console.log(last([7, 9, 0, -2],3));
+console.log(last([7, 9, 0, -2],6));
+
+
