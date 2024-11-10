@@ -36,3 +36,36 @@ function even_arr(arr){
 }
 
 console.log(even_arr(arr))
+
+
+1.Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
+
+Input:(foo([7, 9, 0, -2]))
+output:7
+
+Input:(foo([100,6,4,5]))
+output:100
+
+Input:(foo([1,2,3,4],-3))
+Output:[];
+
+Input:(foo([1,2,3,4],3))
+Output:[1,2,3]
+
+Input:(foo([1,2,3,4],5))
+Output:[1,2,3,4]
+
+function first(arr,n){
+  if(n == undefined){
+     return arr[0];
+  }
+  if(n<0){
+   return []; 
+  }
+  return arr.slice(0,n);
+}
+
+
+console.log(first([7, 9, 0, -2]));
+console.log(first([100,6,4,5]));
+console.log(first([12,13,14,15],-3));
