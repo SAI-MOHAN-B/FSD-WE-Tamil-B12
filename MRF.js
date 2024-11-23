@@ -33,3 +33,13 @@ var arr = [12,13,14,15];
 // when you have the condition
 var res = arr.filter((ele)=>ele%2 == 0)
 console.log(res);
+var arr = [12,13,14,15];
+// Sum the above array
+// reduce helps us to reduce the values into a single element
+//but the data type in the array must be of numbers
+// inside the reduce function we have 2 more variables
+// acc,cv
+// acc : accumulator : initial value
+// cv: current value : element in the array
+var res = arr.reduce((acc,cv)=>acc+cv,0)
+console.log(res);
