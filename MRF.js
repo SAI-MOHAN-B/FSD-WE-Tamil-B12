@@ -43,3 +43,17 @@ var arr = [12,13,14,15];
 // cv: current value : element in the array
 var res = arr.reduce((acc,cv)=>acc+cv,0)
 console.log(res);
+
+   // Print Only those Countrynames whose Population is Greater than 100000
+    var data = res.filter((ele)=>ele.population>100000);
+    console.log(data);
+   // data is having those elements whose population is greater than 100000
+   // I need to print only country names
+   var cname = data.map((ele)=>ele.name.common);
+   console.log(cname);
+  // print all the details of countries whose region belongs to asia
+  var casia = res.filter((ele)=>ele.region == "Asia");
+  console.log(casia);
+   // Find the Sum of total Population of all the contries
+   var popu = res.reduce((acc,cv)=>acc+cv.population,0)
+   console.log(popu);
