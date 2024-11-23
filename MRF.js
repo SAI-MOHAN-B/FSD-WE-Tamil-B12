@@ -15,3 +15,21 @@ var arr = [12,13,14,15];
 var res = arr.map((ele)=>ele*2)
 //here ele represents the array elements
 console.log(res);
+
+// MRF : They belongs to Array
+// map:
+var arr = [12,13,14,15];
+// filter
+// var res = [12,14];
+
+// Step 01: Apply for loop
+// Step 02: take each element of the array
+// check whether it is even or odd 
+//Step 03: if it is an even number keep it in a separate array
+// Step 04: if not will be skipping it
+//Step 05: Print the resultant array
+
+// Apply filter
+// when you have the condition
+var res = arr.filter((ele)=>ele%2 == 0)
+console.log(res);
