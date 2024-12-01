@@ -1,0 +1,153 @@
+HTML 5 BoilerPlate(Template Code)
+tags and elements
+elements:a combination of tag + content
+tags:
+self closing: we don't need to close the tag
+ex:meta tags, img
+
+non self closing:we have to close it manually
+Ex:title,head, body,p, h1-h6,div, section.article, form,......
+
+Element:
+combination of tag+content
+<p>this is p</p> 
+attribute : additional information
+href: consist of HTTPS link of the document
+
+form elements:
+they are needed to collect the information from the user
+
+the for attribute of the form elements
+must be same as the id attribute of the input elements
+
+div vs section
+
+Intro to css:
+css: cascaded style sheet
+different types of css:
+inline
+internal
+external
+
+inline css:
+they apply to the tag of the html elements
+syntax: property:value
+<p style="property:value"></p>
+
+to apply any css property we need style attribute
+
+to apply for the group/ bunch of elements we need internal css:
+to apply internal css we need to use selectors:
+selectors:  css are for the group of elements
+1.class
+2.id
+3.tag selectors
+4. universal (no need)
+
+class selectors:
+syntax: .classname{
+
+}
+
+here . represents it's a class selectors
+class attribute will be used for the class selectors
+
+1.for a single element can we apply 2 class selectors?
+if yes then the latest will be considerd
+
+
+for id selector:
+
+syntax: #idname{
+
+}
+
+here # represents the id selector
+
+when we need to use:
+whe you need specific elements
+
+
+for a same element can we apply both class and id selector?
+yes
+but id will be applied
+
+priority:
+!important >inline css >id>.class>tag
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       #main{
+        background-color: green;
+        color: aqua;
+        font-family: 'Courier New', Courier, monospace;
+       }
+       .main1{
+        background-color: yellow;
+        color: aqua;
+        font-family: 'Courier New', Courier, monospace;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="main1">this is div</div>
+   
+</body>
+
+</html>
+tag selector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+        background-color: green;
+        }
+        p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>this is div</div>
+    <p>this is p</p>
+    <p>this is p</p>
+    <p>this is p</p>
+    <p>this is p</p>
+    <div>this is div</div>
+</body>
+</html>
+if you wanted to override the current css properties
+use !important
+
+Create a html form which Consist of the Following information:
+1.firstnamme
+2.middlename
+3.lastname
+4.email
+5.password
+6.upload a file  
+
+deploy it in netlify
+
+Block level vs Inline elements:
+
+Block level elements:
+They always start on the new line:
+ex: div, section, paragraph,....
+
+
+Inline elements:
+they always start on the same line
+ex: span
+
+How to convert Blocklevel elements  to inline elements?
+By using the display property
