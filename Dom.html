@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // How to create the HTML elements Dynamically?
+
+//Step 01: document.createElement("any html tag")
+var ele = document.createElement("div");
+console.log(ele);
+// Createelement is used to create the HMTL tag dynamically
+
+// Step 02:add the content to the tag
+// using a property called innerHTML
+// if you wanted to add the conetnt to an html tag then we need to use the innerHTML property
+// ele.innerHTML = 'This is a div created dynamically from js'
+ele.innerText = '<p>this is a p tag </p><span>this is span </span>'
+
+//step03: if the elements has to be visibile in the HTML docs
+// element must be in the Body Tag
+document.body.append(ele)
+
+//innerHTML:
+// if you have any html element inside the innerHTML property
+//then it won't display as text
+// instead it display it as the p element
+
+
+//innerText
+// if you add any htmll elements
+// it will display it as thhe normal text
+
+
+      
+    </script>
+   
+</body>
+</html>
