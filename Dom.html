@@ -45,6 +45,26 @@ ele.innerHTML = "this is a class selector"
 document.body.append(ele)
 
 
+// Dom Methods:
+// if you create the html elements
+// then how to access the Content inside the html element?
+//then  we need dom methods
+
+// 1st Document.getElementById()
+// if you wanted to access the content of the form elements
+// with the help of id attribute then
+// we can use the above method.
+  <label for="email">Email</label>
+    <input type="email" id="email">
+    <button type="button" onclick="foo()">ClickMe</button>
+//this method searches the id attribute and retrive the element
+//once it is retrived then  element it will be displayed
+
+function foo(){
+    var res = document.getElementById("email").value;
+    console.log(res);
+}
+
       
     </script>
    
