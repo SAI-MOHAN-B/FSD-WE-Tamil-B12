@@ -81,7 +81,34 @@ console.log(data);
 
 var data1 = document.querySelectorAll(".main")
 console.log(data1);
-      
+      // I have to write a function
+// such that it has to accept the parameters as the input
+// it has to return the output as an html element
+function label_create(tagname,attrname,attrvalue,content){
+var ele = document.createElement(tagname);
+ele.setAttribute(attrname,attrvalue);
+ele.innerHTML = content;
+return ele;
+}
+function input_create(iptagname,ipattrname1,ipattrval1,ipattrname2,ipattrval2){
+ var input = document.createElement(iptagname);
+ input.setAttribute(ipattrname1,ipattrval1);
+ input.setAttribute(ipattrname2,ipattrval2);
+ return input;
+}
+function line_break(){
+var data = document.createElement("br");
+return data
+}
+var res = label_create("label","for","email","Email");
+var label_br = line_break()
+var res1 = input_create("input","type","email","id","email");
+var ip_break = line_break();
+document.body.append(res,label_br,res1,ip_break);
+
+// Create Yesterday's form element using DOM
+// Deploy It in Netlify
+// Display all the details in console.
     </script>
    
 </body>
