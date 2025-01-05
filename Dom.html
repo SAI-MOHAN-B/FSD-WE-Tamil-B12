@@ -64,7 +64,23 @@ function foo(){
     var res = document.getElementById("email").value;
     console.log(res);
 }
+var res = document.getElementsByClassName("main1");
+console.log(res);
+for(var i=0;i<res.length;i++){
+    console.log(res[i]);
+}
+var res1 = document.getElementsByTagName("p");
+console.log(res1);
+// query Selector: it is used to select the first occurence of the specific element
+// return type will be an html element
+// the element which occurs for the first time
+var data = document.querySelector(".main");
+console.log(data);
+// querySelectorAll:it is used to select the all occurence of the specific element
+// return type will be an Array
 
+var data1 = document.querySelectorAll(".main")
+console.log(data1);
       
     </script>
    
